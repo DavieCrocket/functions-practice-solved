@@ -12,6 +12,12 @@
 
 // Your function code starts here...
 
+  function rectArea(sideA, sideB) {
+    const result = sideA * sideB;
+    return result;
+  }
+
+  console.log(rectArea(3, 2));
 
 // Use the function you created above to calculate the areas of 3 rooms
 // Assign the results to room1, room2, and room3 variables
@@ -19,6 +25,17 @@
 
 // Your code goes here:
 
+  var room1 = null;
+  var room2 = null;
+  var room3 = null;
+
+  room1 = rectArea(4, 6);
+  room2 = rectArea(13, 3);
+  room3 = rectArea(4, 8);
+
+  console.log('room1 is ' + room1 + ' sq ft');
+  console.log('room2 is ' + room2 + ' sq ft');
+  console.log('room3 is ' + room3 + ' sq ft');
 
 
 /**
@@ -33,15 +50,18 @@
 
 // Your code goes here...
 
+  function totalRoomsArea(area1, area2, area3) {
+    var roomsArea = area1 + area2 + area3;
+    return(roomsArea);
+  }
 
+  console.log(totalRoomsArea(24, 35, 24));
 
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 variables as arguments for the function call
-const result = function () {
-    console.log(/* replace this comment with a function call here... */);
-}
-
-
+  const result =  function () {
+     console.log(totalRoomsArea(room1, room2, room3));
+  }
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-2"
