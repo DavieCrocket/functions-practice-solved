@@ -15,25 +15,28 @@
  */
 
 // Your code goes here...
-function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
-  var i = 0;
-  if (!arr.length) return false;
-  while (i < arr.length) {
-    if (arr[i] >= val1 && arr[i] <= val2) {
-      console.log('run: ' + i);
-      i++;
-    } 
-    i++;
-    return true;
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) { 
+  if (!arr.length) {return false};
+  i = null;
+  for (let i = 0; i < arr.length; i++) { 
+    if (i < arr.length) {
+      if ( arr[i] >= val1 && arr[i] <= val2 ) {
+        console.log(arr[i] + ' is within range ' + ' ' + val1 + ' and ' + val2);
+        return true;
+      } 
+    }
+    console.log(arr[i] + ' is outside of range ' + ' ' + val1 + ' and ' + val2);
   }
   return false;
 }
 
+
+arr = [];
 result = doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5);
 console.log(result);
 
 result = doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10);
-console.log(result);
+console.log(result); 
 
 
 /**
@@ -52,7 +55,9 @@ console.log(result);
  */
 
 // Your code goes here...
+function getValueWithConditionOne () {
 
+}
 
 
 
