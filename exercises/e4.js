@@ -9,9 +9,9 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-function splitFirstAndLastNames(str) {
-  return str.split(' ');
-}
+const splitFirstAndLastNames = (str) =>  str.split(' ');
+
+console.log(splitFirstAndLastNames('John Smith'));
 
 
 /** =========================
@@ -20,9 +20,15 @@ function splitFirstAndLastNames(str) {
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = function(personObject) {
-  return personObject.age;
+
+var personObject = {
+  id: 1,
+  name: 'Someone',
+  age: 32,
 }
+const personAge = (Data) => personObject.age();
+
+console.log(personAge());
 
 
 /** =========================
