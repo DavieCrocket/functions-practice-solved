@@ -16,8 +16,6 @@ function splitFirstAndLastNames(str) {
  */
 const splitFirstAndLastNames = (str) => str = str.split(' ');
 
-console.log(splitFirstAndLastNames('John Smith'));
-
 
 /** =========================
  * The personAge() constant is assigned to a function, that takes an object of person Data as the argument.
@@ -31,17 +29,9 @@ const personAge = function(personObject) {
 }
  */
 
-var person = { 
-  id: 1,
-  name: "Someone",
-  age: 32,
-}
 
 const personAge = (person) => person.age;
 
-let personName = personAge(person);
-
-console.log(personName);
 
 /** =========================
  * The isNameInArray function takes an array and string of name as the arguments.
@@ -56,12 +46,6 @@ const isNameInArray = function(arr, name) {
  */
 
 const isNameInArray = (arr, name) => arr.includes(name);
-
-const nameArray = ['Jon', 'Michael', 'Andrey'];
-
-console.log(isNameInArray(nameArray, 'Michael'));
-console.log(isNameInArray(nameArray, 'James'));
-
 
 
 /** =========================
@@ -92,8 +76,6 @@ const logSecondsUpToMax = (max) => {
     }
   }, 1000);
 }
-
-logSecondsUpToMax(10);
 
 
 // === TEST YOURSELF ===
